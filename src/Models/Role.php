@@ -9,6 +9,8 @@ class Role extends Model
 {
     protected $guarded = [];
 
+    protected $table = 'voyager_roles';
+
     public function users()
     {
         $userModel = Voyager::modelClass('User');
